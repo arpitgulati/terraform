@@ -26,3 +26,8 @@ output "availability_zones" {
 output "public_rtb_id" {
   value = "${aws_route_table.public.id}"
 }
+
+// The private route table ID.
+output "private_rtb_id" {
+  value = "${aws_route_table.private.id}"
+}
